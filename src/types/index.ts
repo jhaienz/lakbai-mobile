@@ -1,3 +1,5 @@
+export type UserRole = 'tourist' | 'business' | 'lgu';
+
 export interface UserProfile {
   id: string;
   name: string;
@@ -78,4 +80,70 @@ export interface Badge {
   category: string;
   totalVotes?: number;
   currentVotes?: number;
+}
+
+// ── AI Itinerary ─────────────────────────────────────────────────────────────
+
+export interface GeneratedItineraryStop {
+  id: string;
+  time: string;
+  name: string;
+  category: string;
+  description: string;
+  tags: string[];
+  transport: string;
+  transportCost: string;
+  duration: string;
+}
+
+export interface GeneratedItinerary {
+  id: string;
+  title: string;
+  subtitle: string;
+  totalBudget: string;
+  transportSummary: string;
+  stops: GeneratedItineraryStop[];
+  savedAt?: number;
+}
+
+// ── Reviews & Gamification ───────────────────────────────────────────────────
+
+export interface Review {
+  id: string;
+  placeId: string;
+  userName: string;
+  rating: number;
+  comment: string;
+  timestamp: number;
+}
+
+export type DailyTaskType = 'view_place' | 'write_review' | 'chat' | 'generate_itinerary' | 'explore_category';
+
+export interface DailyTask {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  points: number;
+  completed: boolean;
+  type: DailyTaskType;
+}
+
+// ── Multi-role types ─────────────────────────────────────────────────────────
+
+export type ApplicationStatus = 'pending' | 'approved' | 'rejected';
+
+export interface BusinessApplication {
+  id: string;
+  businessName: string;
+  category: string;
+  description: string;
+  location: string;
+  ownerName: string;
+  contact: string;
+  imageUrl: string;
+  status: ApplicationStatus;
+  submittedAt: number;
+  reviewedAt?: number;
+  reviewNotes?: string;
 }

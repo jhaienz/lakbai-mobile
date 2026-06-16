@@ -64,7 +64,7 @@ export default function ImpactScreen() {
           <TouchableOpacity style={styles.menuBtn}>
             <Ionicons name="menu-outline" size={22} color={COLOR_TEXT} />
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>ALBAY GO</Text>
+          <Text style={styles.headerTitle}>LakbAI</Text>
           <TouchableOpacity style={styles.avatarBtn}>
             <Ionicons name="person" size={18} color={COLOR_PRIMARY} />
           </TouchableOpacity>

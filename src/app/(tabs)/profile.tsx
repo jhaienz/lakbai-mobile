@@ -99,8 +99,8 @@ export default function ProfileScreen() {
         text: 'Sign Out',
         style: 'destructive',
         onPress: async () => {
-          await AsyncStorage.multiRemove(['onboarded', 'userName', 'userVibes']);
-          router.replace('/onboarding');
+          await AsyncStorage.multiRemove(['onboarded', 'userName', 'userVibes', 'userRole', 'userProfile']);
+          router.replace('/login');
         },
       },
     ]);
@@ -126,7 +126,7 @@ export default function ProfileScreen() {
           <TouchableOpacity style={styles.menuBtn}>
             <Ionicons name="menu-outline" size={22} color={COLOR_TEXT} />
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>ALBAY GO</Text>
+          <Text style={styles.headerTitle}>LakbAI</Text>
           <TouchableOpacity style={styles.settingsBtn}>
             <Ionicons name="settings-outline" size={20} color={COLOR_TEXT} />
           </TouchableOpacity>
