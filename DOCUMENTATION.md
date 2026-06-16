@@ -167,14 +167,12 @@ LAKBAI solves problems through three interconnected user flows:
 
 ## 4.1 System Architecture
 
-### Technology Stack (Laptop 1 - Backend)
 
 **Backend API**
 - Framework: NestJS (TypeScript)
-- Base URL: http://localhost:3000
 - Authentication: Simple (userId in request body for MVP)
 - Data: JSON flat-file storage
-- Port: 3000
+
 
 **Modules & Components**
 ```
@@ -196,8 +194,6 @@ NestJS Backend
 
 **Design & Mockups**
 - Tool: Google Stitch
-- Mockup Reference: [Link to Stitch project]
-- Design System: [To be created]
 - Frontend Framework: React Native or Flutter (for future coding)
 
 **Design Deliverables**
@@ -362,16 +358,6 @@ LAKBAI/
 - Government innovation programs
 - Co-marketing initiatives
 
-## 5.3 Cost Structure (Year 1 MVP)
-
-| Cost Category | Estimated Amount | Notes |
-|--------------|-----------------|-------|
-| Development Team | $40,000-60,000 | 4 developers, 1 designer, 1 PM |
-| Infrastructure | $5,000-10,000 | Cloud hosting, APIs, services |
-| Tools & Licenses | $2,000-5,000 | Software, design tools |
-| Marketing | $5,000-10,000 | Initial user acquisition |
-| Operations | $5,000-10,000 | Contingency, miscellaneous |
-| **TOTAL** | **$57,000-95,000** | |
 
 ---
 
@@ -397,33 +383,6 @@ LAKBAI/
 | JSON file scaling | Migrate to PostgreSQL post-MVP |
 | Authentication gaps | Add JWT in Phase 2 |
 
-## 6.2 Development Timeline
-
-**Phase 1: MVP Build** - 6-8 weeks
-- Backend: Users, businesses, spots, itinerary modules
-- Frontend mockups: All key screens in Google Stitch
-- Testing & bug fixes
-- Output: Functional MVP with 50+ local businesses
-
-**Phase 2: Pilot Testing** - 4 weeks
-- Recruit 200+ local businesses in Albay
-- Beta test with 500 tourists
-- Gather feedback & iterate
-- Output: Refined platform with real data
-
-**Phase 3: Regional Launch** - 4-6 weeks
-- Expand to 2-3 additional regions
-- Onboard 1,000+ businesses
-- Build LGU partnerships
-- Output: Multi-region operational platform
-
-## 6.3 Resource Requirements
-
-**Team**
-- 2 Full-Stack Backend Developers (Laptop 1)
-- 1 UI/UX Designer (Laptop 2 - Stitch mockups)
-- 1 Product Manager
-- 1 QA Tester
 
 **Infrastructure**
 - Laptop 1: Development laptop (Backend coding)
@@ -436,12 +395,6 @@ LAKBAI/
 - Google Stitch (design mockups)
 - Development tools & libraries (free/open-source where possible)
 
-## 6.4 Scalability Considerations
-
-**User Growth**
-- Expected Year 1: 1,000-5,000 tourists
-- Expected Year 2: 25,000+ tourists
-- Expected Year 3: 100,000+ tourists
 
 **Data Growth**
 - Database migration path: JSON → PostgreSQL → Distributed database
@@ -515,60 +468,15 @@ LAKBAI is a feasible, high-impact tourism platform addressing real market gaps. 
 - Small businesses gain market access
 - Communities benefit from tourism growth
 
-## 7.4 Next Steps
-
-**Immediate (Week 1)**
-- [ ] Set up development environment (Laptop 1 & 2)
-- [ ] Create NestJS project & basic structure
-- [ ] Begin Google Stitch mockup design
-- [ ] Establish LGU partnership (Albay)
-
-**Short-term (Weeks 2-4)**
-- [ ] Complete backend API (Users, Businesses, Spots)
-- [ ] Integrate Gemini AI for itinerary generation
-- [ ] Complete frontend mockups (all screens)
-- [ ] Build transport budget calculator
-
-**Medium-term (Weeks 5-8)**
-- [ ] Full system testing & bug fixes
-- [ ] UI polish & optimization
-- [ ] Recruit pilot businesses & LGU testers
-- [ ] Prepare demo & launch
-
-## 7.5 Success Metrics
-
-| Metric | Target | Timeline |
-|--------|--------|----------|
-| MVP completion | Feature-complete | Week 8 |
-| Pilot businesses | 50+ verified | Week 10 |
-| Pilot users | 500 beta testers | Week 12 |
-| User satisfaction | 4.0+ stars | Week 12 |
-| Generated itineraries | 1,000+ | Week 12 |
-
----
-
-## APPROVAL & SIGN-OFF
-
-**Project Lead:** _________________ Date: __________
-
-**Technical Lead (Backend):** _________________ Date: __________
-
-**Design Lead (Frontend):** _________________ Date: __________
-
-**Product Manager:** _________________ Date: __________
-
----
 
 ## QUICK REFERENCE LINKS
 
 **Development**
-- GitHub Repository: [To be added]
-- Backend Port: localhost:3000
 - Gemini API: [aistudio.google.com](https://aistudio.google.com)
 
 **Design**
-- Google Stitch Mockups: [Link to project]
-- Design System: [To be created]
+- Google Stitch Mockups
+
 
 **Documentation**
 - API Reference: See Section 4.2
